@@ -1,0 +1,126 @@
+*{
+    font-family: 'Rubik', sans-serif;
+  
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/058/893/small/exotic-tropical-plant-background-free-vector.jpg);
+       
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(166, 226, 167);
+    margin: 0px;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(166, 226, 167);
+    margin: 2px;
+}
+p{
+    margin: 5px;
+    font-size: 30px;
+    display: inline;
+    background-color: rgb(166, 226, 167);
+}
+button{
+    background-color: aquamarine;
+    color: black;
+    font-size: 30px;
+}
+.reset{
+    font-size: 20px;
+    background-color: rgb(215, 189, 193);
+}
+.timer{
+    display: inline;
+    font-size: 40px;
+}
+
+.gameboard {
+    border:1px solid blue;
+    display:flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    /*gap: 2%;
+    padding: 5px; */
+    background-color: rgb(244,255,140);
+    perspective: 900px;
+    
+}
+
+.parent{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex; 
+    flex-wrap: wrap;
+  
+    margin: auto;
+    transform: scale(1);
+   transform-style: preserve-3d;
+   transition: transform .5s;
+    
+}
+
+.cover, 
+.card{
+    position: absolute;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+    transition: transform .6s;
+    backface-visibility: hidden;
+    border-radius: 25%;
+    margin: 5px;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cover{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(132, 189, 255);
+    border: 1px solid gray;
+     /* display: flex; 
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+  
+    
+}
+.card{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(232, 189, 255);
+    border: 1px solid gray;
+     /* display: flex; 
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    transform: rotateY(180deg)
+}
+.scoreBoard{
+    font-size: 40px;
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    
+}
+.parent.flip{
+    transform: rotateY(180deg);
+}
+
+.parent.hidden{
+    visibility: hidden;
+}
+
+.colorful{
+    background-color: rgb(32, 227, 49);
+    color: yellow;
+}
