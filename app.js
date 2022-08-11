@@ -119,7 +119,7 @@ if (firstCardText===secondCardText && firstCard!==secondCard){
         
 
 }
-if (pairs===1){
+if (pairs===15){
     scoreCount.innerText=(`You took ${score} guesses in ${minutes.innerText} ${seconds.innerText}`)
     stopTimer()
     minutes.innerText= `YAY YOU `
