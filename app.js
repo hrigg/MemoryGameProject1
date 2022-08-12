@@ -32,20 +32,10 @@ function timer ( value ) {
 // else {clearInterval(time)}
 
 
-// let time=setInterval( function(){
-//     seconds.innerHTML=`${(++sec%60)} sec`;
-//     minutes.innerHTML=`${(parseInt(sec/60,10))} min`;
-// }, 1000);
-
-//https://www.delftstack.com/howto/javascript/javascript-count-up-timer/#:~:text=Use%20setInterval()%20and%20pad()%20Functions%20to%20Display%20JavaScript%20Count%20Up%20Timer,-HTML%20Code%3A
-
-
-
 //Add image to each card
 
 
-let images = ['🪴' , '🪴', '🌵', '🌵', '🌴' , '🌴' , '☘️', '☘️', '🍒' , '🍒' , '🌱' , '🌱', '🌷', '🌷', '🌽', '🌽', '🍋', '🍋', '🍉', '🍉', '💐', '💐', '🍄', '🍄', '🌼', '🌼', '🌹', '🌹', '🥑', '🥑'
-]
+let images = ['🪴' , '🪴', '🌵', '🌵', '🌴' , '🌴' , '☘️', '☘️', '🍒' , '🍒' , '🌱' , '🌱', '🌷', '🌷', '🌽', '🌽', '🍋', '🍋', '🍉', '🍉', '💐', '💐', '🍄', '🍄', '🌼', '🌼', '🌹', '🌹', '🥑', '🥑']
 //console.log(images.length)
 //console.log(cards[6])
 
@@ -61,9 +51,6 @@ function shuffleArray(e){
     }
     
     console.log(images)
-//https://stackoverflow.com/questions/60662796/shuffle-array-in-js
-//Used to help randomize array
-
 
 images.forEach( function(e){
     
@@ -81,7 +68,6 @@ let firstCardText=''
 let secondCardText=''
 let flipped= false
 let pairs=0
-//let selection =[]
 let score=0
 
 //FLIP CARD
@@ -170,14 +156,6 @@ restart.addEventListener('click', function(){
 //     if(foodBox.checked===true){
 //  images = ['🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦','🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦']}
 // }
-
-
-// //player clicks two cards they show image on that card.... 
-
-
-//IF those two cards match (===), they stay showing (or disappear)AND add a point to the score
-
-//IF the do not match (!==), they turn back to the og color (after 3 seconds delay)
 
 
 
