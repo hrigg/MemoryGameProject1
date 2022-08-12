@@ -11,6 +11,7 @@ let scoreCount=document.querySelector('.score')
 let pairCount=document.querySelector('.pairs')
 let restart= document.querySelector('.reset')
 let scoreBoardDisplay= document.querySelector('.scoreBoard')
+let foodBox= document.querySelector('.foodThemeBox')
 //Need to create: TIMER 
 //need to make it go when start is clicked
 
@@ -105,7 +106,7 @@ if (firstCardText===secondCardText && firstCard!==secondCard){
         
 
 }
-if (pairs===15){
+if (pairs===1){
     scoreCount.innerText=(`You took ${score} guesses in ${minutes.innerText} ${seconds.innerText}`)
     stopTimer()
     minutes.innerText= `YAY YOU `
@@ -150,12 +151,13 @@ restart.addEventListener('click', function(){
 
 
 
-// foodTheme.addEventListener('click', foodImages)
+foodBox.addEventListener('click', foodImages)
 
-// function foodImages(){
-//     if(foodBox.checked===true){
-//  images = ['🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦','🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦']}
-// }
+function foodImages(){
+    // if(foodBox.checked===true)
+    
+ images = ['🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦','🍎','🍏','🍌','🍋','🥨','🍔','🌭','🍕','🍟','🥞','🥗','🍤','🍭','🍩','🍦']
+    }
 
 
 
