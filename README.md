@@ -32,3 +32,5 @@ User Experience:
 -->Challenges: The biggest challenges I faced were working with the CSS and JS to create the cards that had both a front and a back and flipped when clicked. I was able to overlay the cards by using position: absolute and creating a class that rotated the cards on the Y axis when they were clicked. It was also important that both cards had backface visibility hidden. 
 
 -->Stretch features I plan to add: changing theme with selection of checkbox or a button and creating two player mode to see who can get the most matches
+![Screen Shot 2022-08-11 at 11 54 59 AM](https://user-images.githubusercontent.com/109535490/184176597-96841b26-4328-45ff-bfc7-ff80fe777d37.png)
+![Screen Shot 2022-08-11 at 11 54 50 AM](https://user-images.githubusercontent.com/109535490/184176617-8b482994-5a48-457c-8e93-b6b2b698d8b1.png)
